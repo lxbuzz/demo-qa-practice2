@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a0f175ca-560e-40b4-a6c4-5046162c209a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/tests/QaFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/QaFormTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,7 +28,12 @@
             <expand>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="demo-qa-pactice2" type="f1a62948:ProjectNode" />
+                <item name="demo-qa-practice2" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="demo-qa-practice2" type="f1a62948:ProjectNode" />
+                <item name="Run Configurations" type="7b0102dc:RunConfigurationsNode" />
               </path>
             </expand>
             <select />
@@ -54,13 +58,15 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
   </component>
   <component name="RunManager" selected="Gradle.QaFormTests.fillPracticeFormTest">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -167,6 +173,7 @@
       <workItem from="1621614963744" duration="160000" />
       <workItem from="1621616335719" duration="3132000" />
       <workItem from="1621764210971" duration="7475000" />
+      <workItem from="1621816494152" duration="14000" />
     </task>
     <servers />
   </component>
