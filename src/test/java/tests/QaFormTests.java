@@ -4,6 +4,7 @@ import java.io.File;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.By;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -27,7 +28,11 @@ public class QaFormTests {
     String currentAddress = "76 Broolklyh Neights str.";
     String state = "Haryana";
     String city = "Panipat";
-    String filePath="src/test/resources/test_pic.png";
+    String picfilename  ="test_pic.png";
+    String filePath="src/test/resources/";
+
+    String fullPath=filePath+picfilename;
+
 
     //Set up Logger
 
@@ -51,22 +56,35 @@ public class QaFormTests {
 
         $("#firstName").setValue(name);
         $("#lastName").setValue(lastName);
+
         $("#userEmail").setValue(email);
-        $(byText(gender)).click();
+
+       // $(byText(gender)).click();
+        //not working as expected (
+
+        $( "#gender-radio-1").parent().click();
         $("#userNumber").setValue(phoneNumber);
         $("#dateOfBirthInput").click();
         $(".react-datepicker__month-select").selectOption(monthOfBirth);
         $(".react-datepicker__year-select").selectOption(yearOfBirth);
         $(".react-datepicker__day--0"+dayOfBirth).click();
         $("#subjectsInput").setValue("c");
+
         $(byText(subject)).click();
+
         $(byText(hobby)).click();
+
         $("#uploadPicture").uploadFile(new File(filePath));
         $("#currentAddress").setValue(currentAddress);
-        $("#state").click();
-        $(byText(state)).click();
-        $("#city").click();
-        $(byText(city)).click();
+
+       // $("#state").click();
+       // $(byText(state)).click();
+        // $("#city").click();
+        // $(byText(city)).click();
+
+        $("#react-select-3-input").setValue(state).pressEnter();
+        $("#react-select-4-input").setValue(city).pressEnter();
+
         String pngTestAct = screenshot("scr_act_test");
         $("#submit").click();
         //assert
@@ -78,10 +96,10 @@ public class QaFormTests {
         $$("tbody tr").filterBy(text("Date of Birth")).shouldHave(texts(dayOfBirth+" "+monthOfBirth+","+yearOfBirth));
         $$("tbody tr").filterBy(text("Subjects")).shouldHave(texts(subject));
         $$("tbody tr").filterBy(text("Hobbies")).shouldHave(texts(hobby));
-        $$("tbody tr").filterBy(text("Picture")).shouldHave(texts("pict.jpg"));
+        $$("tbody tr").filterBy(text("Picture")).shouldHave(texts("Picture resources"));
         $$("tbody tr").filterBy(text("Address")).shouldHave(texts(currentAddress));
         $$("tbody tr").filterBy(text("State and City")).shouldHave(texts(state+" "+city));
-        // String pngTestAssert = screenshot("scr_assert_test");
+         String pngTestAssert = screenshot("scr_assert_test");
         $("button#closeLargeModal").click();
         $("#example-modal-sizes-title-lg").shouldBe(hidden);
         String pngTestAssertClose = screenshot("scr_asserClose_test");

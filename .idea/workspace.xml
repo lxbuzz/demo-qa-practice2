@@ -5,14 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0f175ca-560e-40b4-a6c4-5046162c209a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/QaFormTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/test_pic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/demo-qa-pactice2.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/java/tests/QaFormTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/tests/QaFormTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/tests/QaFormTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +53,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="JAVA" />
   </component>
-  <component name="RunManager" selected="Gradle.QaFormTests">
+  <component name="RunManager" selected="Gradle.QaFormTests.fillPracticeFormTest">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -77,6 +71,27 @@
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" value="--tests &quot;tests.QaFormTests&quot;" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
+    <configuration name="QaFormTests.fillPracticeFormTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests &quot;tests.QaFormTests.fillPracticeFormTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -134,6 +149,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.QaFormTests.fillPracticeFormTest" />
         <item itemvalue="Gradle.QaFormTests" />
         <item itemvalue="Gradle.demo-qa-pactice2" />
         <item itemvalue="Gradle.demo-qa-pactice2 [dependencies]" />
@@ -150,7 +166,7 @@
       <updated>1621614959142</updated>
       <workItem from="1621614963744" duration="160000" />
       <workItem from="1621616335719" duration="3132000" />
-      <workItem from="1621764210971" duration="2809000" />
+      <workItem from="1621764210971" duration="7475000" />
     </task>
     <servers />
   </component>
